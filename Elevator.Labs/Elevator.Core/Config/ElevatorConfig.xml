@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ElevatorConfig>
+  <Elevators>
+    <Elevator>
+      <Name>Elevator 1</Name>
+      <Make>OTIS</Make>
+      <ConsoleForeColor>14</ConsoleForeColor>
+    </Elevator>
+    <Elevator>
+      <Name>Elevator 2</Name>
+      <Make>OTIS</Make>
+      <ConsoleForeColor>13</ConsoleForeColor>
+    </Elevator>
+    <Elevator>
+      <Name>Elevator 3</Name>
+      <Make>OTIS</Make>
+      <ConsoleForeColor>12</ConsoleForeColor>
+    </Elevator>
+    <!--<Elevator>
+      <Name>Elevator 4</Name>
+      <Make>OTIS</Make>
+      <ConsoleForeColor>11</ConsoleForeColor>
+    </Elevator>-->
+  </Elevators>
+</ElevatorConfig>
