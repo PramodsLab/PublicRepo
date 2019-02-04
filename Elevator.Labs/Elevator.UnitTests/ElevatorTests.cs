@@ -9,8 +9,8 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Serve_Up_Request_Test()
         {
-            var request = new ElevatorRequest() { CurrentFloor = 5, Direction = Direction.Up };
-            var servingElevator = new Core.Elevator() { Direction = Direction.Up };
+            var request = new ElevatorRequest() { CurrentFloor = 5, Direction = Status.Up };
+            var servingElevator = new Core.Elevator() { Direction = Status.Up };
             servingElevator.EnqueueRequest(request);
 
             Assert.IsTrue(servingElevator.IsRequestsEmpty());
@@ -19,8 +19,8 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Serve_Down_Request_Test()
         {
-            var request = new ElevatorRequest() { CurrentFloor = 5, Direction = Direction.Down };
-            var servingElevator = new Core.Elevator() { Direction = Direction.Down };
+            var request = new ElevatorRequest() { CurrentFloor = 5, Direction = Status.Down };
+            var servingElevator = new Core.Elevator() { Direction = Status.Down };
             servingElevator.EnqueueRequest(request);
 
             Assert.IsTrue(servingElevator.IsRequestsEmpty());

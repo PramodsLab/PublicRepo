@@ -2,8 +2,8 @@
  ***********************************************************************************
  *Name      : Elevator.cs
  *Purpose   : Elevator Manager would assign the request to each elevator which would serve the requests.
- *            Each elevator also maintains a list of Destination floors; which each passenger can input after entering the elevator
- *            The requested and destination floors are served by stopping on the floor.
+ *            Each elevator also maintains a list of Destination floors; which each passenger can input
+ *            after entering the elevator.The requested and destination floors are served by stopping on the floor.
  *Author    : Pramod
  *Date      : 03/02/2019
  ***********************************************************************************
@@ -33,7 +33,7 @@ namespace Elevator.Core
 
         /// <summary>Gets or sets the direction of the elevator</summary>
         /// <value>The direction of the elevator.</value>
-        public Direction Direction { get; set; }
+        public Status Direction { get; set; }
 
         /// <summary>Gets or sets the current floor; where the elevator currently is.</summary>
         /// <value>The current floor.</value>
@@ -67,11 +67,11 @@ namespace Elevator.Core
                 {
                     switch (this.Direction)
                     {
-                        case Direction.Up:
+                        case Status.Up:
                             if (this.CurrentFloor == ElevatorManager.MaxFloor) // change direction after reaching max floor
                             {
                                 MoveDown();
-                                this.Direction = Direction.Down;
+                                this.Direction = Status.Down;
                             }
                             else
                             {
@@ -80,11 +80,11 @@ namespace Elevator.Core
 
                             break;
 
-                        case Direction.Down:
+                        case Status.Down:
                             if (CurrentFloor == ElevatorManager.MinFloor) // change direction after reaching in floor.
                             {
                                 MoveUp();
-                                this.Direction = Direction.Up;
+                                this.Direction = Status.Up;
                             }
                             else
                             {
@@ -99,7 +99,7 @@ namespace Elevator.Core
                 OpenDoor();
 
                 var d = this.Direction; // temp direction to hold the elevators current direction
-                this.Direction = Direction.Loading;
+                this.Direction = Status.Loading;
                 CloseDoor();
 
                 this.Direction = d; // assign the initial direction after loading or unloading the passengers

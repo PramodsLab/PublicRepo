@@ -85,13 +85,13 @@ namespace Elevator.Core
                     //If no elevator in same direction; pick an elevator which is idle
                     if (servingElevator == null)
                     {
-                        servingElevator = ElevatorList.Where(i => i.Direction == Direction.Idle).FirstOrDefault();
+                        servingElevator = ElevatorList.Where(i => i.Direction == Status.Idle).FirstOrDefault();
                     }
 
                     //If no elevator in same direction or no elevator which is idle; pick elevators moving in opposite direction
                     if (servingElevator == null)
                     {
-                        var requestOppDirection = request.Direction == Direction.Up ? Direction.Down : Direction.Up;
+                        var requestOppDirection = request.Direction == Status.Up ? Status.Down : Status.Up;
                         var elevatorInOppDirection = ElevatorList.Where(i => i.Direction == requestOppDirection && !i.CapacityReached).ToList();
 
                         if (elevatorInOppDirection.Any())
@@ -103,7 +103,7 @@ namespace Elevator.Core
 
                     if (servingElevator != null)
                     {
-                        servingElevator.Direction = servingElevator.CurrentFloor < request.CurrentFloor ? Direction.Up : Direction.Down;
+                        servingElevator.Direction = servingElevator.CurrentFloor < request.CurrentFloor ? Status.Up : Status.Down;
                         servingElevator.EnqueueRequest(request); // Enqueue the request to an elevator which would serve the request.
                         queue.Dequeue();
                     }
@@ -117,12 +117,12 @@ namespace Elevator.Core
         /// <param name="request">The request.</param>
         public static void EnqueueRequest(ElevatorRequest request)
         {
-            if (request.Direction == Direction.Up)
+            if (request.Direction == Status.Up)
             {
                 UpDirectionQueue.Enqueue(request);
             }
 
-            if (request.Direction == Direction.Down)
+            if (request.Direction == Status.Down)
             {
                 DownDirectionQueue.Enqueue(request);
             }

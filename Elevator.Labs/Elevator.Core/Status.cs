@@ -1,7 +1,7 @@
 ﻿namespace Elevator.Core
 {
     /// <summary>Represents the direction of the elevator or elevator request.</summary>
-    public enum Direction
+    public enum Status
     {
         /// <summary>Elevator in idle state</summary>
         Idle = 0,
@@ -13,6 +13,9 @@
         Down = 2,
 
         /// <summary>Elevator loading or unloading passengers</summary>
-        Loading = 3
+        Loading = 3,
+
+        /// <summary>Elevator in out of order or maintainance mode</summary>
+        OutOfOrder = 4
     }
 }

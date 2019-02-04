@@ -44,14 +44,13 @@
   <ItemGroup>
     <Compile Include="Config\ConfigManager.cs" />
     <Compile Include="Config\ElevatorConfig.cs" />
-    <Compile Include="Direction.cs" />
+    <Compile Include="Status.cs" />
     <Compile Include="Elevator.cs" />
     <Compile Include="ElevatorManager.cs" />
     <Compile Include="ElevatorRequest.cs" />
     <Compile Include="PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Config\ElevatorConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

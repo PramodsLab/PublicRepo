@@ -22,74 +22,74 @@ namespace Elevator.Labs
 
         private static void EnqueueFirstSetRequests()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 2, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 2, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Status.Down });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 1, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 2, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 1, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 2, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 6, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 7, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 6, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 7, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 11, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 12, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 11, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 12, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 13, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 14, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 13, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 14, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 14, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 14, Direction = Status.Down });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 13, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 12, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 11, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 13, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 12, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 11, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 9, Direction = Status.Down });
         }
 
         private static void EnqueueSecondSetRequests()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 1, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = -1, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 1, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = -1, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Status.Down });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 16, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 15, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 16, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 17, Direction = Direction.Up });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 17, Direction = Status.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Status.Up });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 10, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 3, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 8, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 5, Direction = Status.Down });
 
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 17, Direction = Direction.Down });
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 16, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 18, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 17, Direction = Status.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 16, Direction = Status.Down });
         }
     }
 }

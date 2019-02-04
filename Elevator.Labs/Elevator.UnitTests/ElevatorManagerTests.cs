@@ -11,7 +11,7 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Serve_One_Elevator_Up_Request()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Up });
 
             Task.Run(() => ElevatorManager.StartAsync(ElevatorManager.UpDirectionQueue));
 
@@ -23,7 +23,7 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Do_Not_Serve_One_Elevator_Up_Request()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Up });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Up });
 
             Task.Run(() => ElevatorManager.StartAsync(ElevatorManager.DownDirectionQueue));
 
@@ -35,7 +35,7 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Serve_One_Elevator_Down_Request()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Down });
 
             Task.Run(() => ElevatorManager.StartAsync(ElevatorManager.DownDirectionQueue));
 
@@ -47,7 +47,7 @@ namespace Elevator.UnitTests
         [TestMethod]
         public void Do_Not_Serve_One_Elevator_Down_Request()
         {
-            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Direction.Down });
+            ElevatorManager.EnqueueRequest(new ElevatorRequest() { CurrentFloor = 4, Direction = Status.Down });
 
             Task.Run(() => ElevatorManager.StartAsync(ElevatorManager.UpDirectionQueue));
 

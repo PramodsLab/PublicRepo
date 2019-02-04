@@ -10,11 +10,11 @@ namespace Elevator.UnitTests
         public void MinHeap_Enqueue_Dequeue_Test()
         {
             PriorityQueue<ElevatorRequest> priorityQueue = new PriorityQueue<ElevatorRequest>();
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 10, Direction = Direction.Up });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 9, Direction = Direction.Up });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 6, Direction = Direction.Up });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 7, Direction = Direction.Up });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 8, Direction = Direction.Up });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 10, Direction = Status.Up });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 9, Direction = Status.Up });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 6, Direction = Status.Up });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 7, Direction = Status.Up });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 8, Direction = Status.Up });
 
             Assert.AreEqual(6, priorityQueue.Dequeue().CurrentFloor);
             Assert.AreEqual(7, priorityQueue.Dequeue().CurrentFloor);
@@ -27,11 +27,11 @@ namespace Elevator.UnitTests
         public void MaxHeap_Enqueue_Dequeue_Test()
         {
             PriorityQueue<ElevatorRequest> priorityQueue = new PriorityQueue<ElevatorRequest>();
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 10, Direction = Direction.Down });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 9, Direction = Direction.Down });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 6, Direction = Direction.Down });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 7, Direction = Direction.Down });
-            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 8, Direction = Direction.Down });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 10, Direction = Status.Down });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 9, Direction = Status.Down });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 6, Direction = Status.Down });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 7, Direction = Status.Down });
+            priorityQueue.Enqueue(new ElevatorRequest { CurrentFloor = 8, Direction = Status.Down });
 
             Assert.AreEqual(10, priorityQueue.Dequeue().CurrentFloor);
             Assert.AreEqual(9, priorityQueue.Dequeue().CurrentFloor);

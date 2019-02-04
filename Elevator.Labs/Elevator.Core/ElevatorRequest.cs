@@ -3,7 +3,7 @@
  *Name      : ElevatorRequest.cs
  *Purpose   : Represents the elements in the Priority Queue. Priority Queue in Up direction represents a Min Heap.
  *            Priority queue in down direction is Max Heap. Max and Min Heap implementation switch is done by changing
- *             CompareTo method implementation
+ *            CompareTo method implementation
  *Author    : Pramod
  *Date      : 03/02/2019
  ***********************************************************************************
@@ -20,7 +20,7 @@ namespace Elevator.Core
 
         /// <summary>Gets or sets the direction.</summary>
         /// <value>The direction.</value>
-        public Direction Direction { get; set; }
+        public Status Direction { get; set; }
 
         /// <summary>
         /// Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
@@ -34,11 +34,11 @@ namespace Elevator.Core
             var result = 0;
             switch (this.Direction)
             {
-                case Direction.Up:
+                case Status.Up:
                     result = CurrentFloor.CompareTo(other.CurrentFloor);
                     break;
 
-                case Direction.Down:
+                case Status.Down:
                     result = CurrentFloor.CompareTo(other.CurrentFloor) * -1;
                     break;
             }
